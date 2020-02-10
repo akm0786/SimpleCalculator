@@ -2,12 +2,71 @@
 <html>
 <head>
 <title>Calculator</title>
+<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+<style>
+body {
+  background-color:#FE774E;
+  font-family: 'Roboto', sans-serif;
+  font-weight:900;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+input {
+  width: 30%;
+  color:white;
+ font-size:17px;
+  padding: 8px 13px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color:black;
+  
+   border:1px solid black;
+ border-radius:4px;
+ 
+}
+
+input[type=submit] {
+  width: 18%;
+  border:0px solid green;
+  color:white;
+ font-size:17px;
+margin:20px 100px;
+background-color:black;
+  padding: 8px 13px;
+  border-radius:20px;
+ transition:0.5s;
+  box-sizing: border-box;
+}
+input[type="submit"]:hover,input[type="text"]:hover{
+background-color:#43ba2b;
+color:black;
+
+
+}
+form select
+{ 
+  color:black;
+  font-size:18px;
+  width:100px;
+  background:#FE774E;
+  margin: 0 0 0 70px;
+  padding:10px;
+  border:0px solid black;
+  border-radius:4px;
+}
+
+
+</style>
 </head>
-<body bgcolor="orange">
+<body>
 
 
 
-
+<h1>CALCULATOR </h1>
 
 <form action="MethodCall" method="get"  >
 
@@ -19,7 +78,7 @@
  <br><br>
 
 
- <select  name="operation" autofocus required>
+ <select   name="operation" autofocus required>
  	<option value=""> none </option>
  	<option value="Addition">Addition  </option>
  	<option value="Subtraction">Subtraction </option>
@@ -31,7 +90,8 @@
 
 
 <br><br>
- <button  value="Submit" >Submit </button>
+<input type="submit">
+ <!-- <button  value="Submit" >Submit </button> -->
  	
 
 </form>

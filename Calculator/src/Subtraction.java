@@ -19,8 +19,15 @@ public class Subtraction extends HttpServlet
 		
 		int c=a-b;
 		
-		PrintWriter pr= res.getWriter();
-		pr.print("the addition is "+c);
+		   String htmlResponse = "<html><body bgcolor="+"orange"+">";
+	        htmlResponse += "<h2>Your first no. is=" + a + "<br/>";      
+	        htmlResponse += "Your second no. is=" + b + "</h2><br>";  
+	        htmlResponse+="<h2>Subtraction is="+c+"</h2></body>";
+	        htmlResponse += "</html>";
+	         
+			PrintWriter pr= res.getWriter();
+			  pr.println(htmlResponse);
+
 
 	
 	}
