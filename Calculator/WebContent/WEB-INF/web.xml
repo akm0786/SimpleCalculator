@@ -2,5 +2,50 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
   <display-name>Calculator</display-name>
   
+  <servlet>
+    <servlet-name>MethodCall</servlet-name>
+    <servlet-class>com.calculator.MethodCall</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MethodCall</servlet-name>
+    <url-pattern>/MethodCall</url-pattern>
+  </servlet-mapping>
   
+  <servlet>
+    <servlet-name>AdditionCall</servlet-name>
+    <servlet-class>com.calculator.Addition</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AdditionCall</servlet-name>
+    <url-pattern>/Addition</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>SubtractionCall</servlet-name>
+    <servlet-class>com.calculator.Subtraction</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>SubtractionCall</servlet-name>
+    <url-pattern>/Subtraction</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>MultiplyCall</servlet-name>
+    <servlet-class>com.calculator.Multiply</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>MultiplyCall</servlet-name>
+    <url-pattern>/Multiply</url-pattern>
+  </servlet-mapping>
+   <servlet>
+    <servlet-name>DivisionCall</servlet-name>
+    <servlet-class>com.calculator.Division</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DivisionCall</servlet-name>
+    <url-pattern>/Division</url-pattern>
+  </servlet-mapping>
 </web-app>
